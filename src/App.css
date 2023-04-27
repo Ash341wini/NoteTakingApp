@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.sign1{
+  text-decoration: none;
+  color: white;
+}
+.sign {
+  
+  color: black;
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+  text-decoration: underline;
+}
+.label{
+  display: flex;
+}
+.input{
+  width: 50%;
+}
+.fab1{
+  width: 40px;
+}
