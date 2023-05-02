@@ -24,7 +24,7 @@ function Login() {
             }
             else if(res.data.message == "Login Successfully"){
                 navigate('/home');
-                alert("Logged In");
+                // alert("Logged In");
             }else {
                 alert("Incorrect Emailand Password not match");
             }
@@ -51,11 +51,11 @@ function Login() {
                       <div class="card-body p-md-4">
                         <div class="row justify-content-center">
                           <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1"></div>
-                            <form>
+                            <form action=''>
                                 {/* <!-- Email input --> */}
-                                <div class="d-flex flex-row align-items-center mb-4">
-                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
+                                <div className='form-group'>
+                                
+                               
                                 <label class="form-label" for="form3Example3c">Your Email</label>
                                 <input required type='email' className='form-control' id='email' 
                                       placeholder='Enter Email' value={email}
@@ -64,12 +64,12 @@ function Login() {
                                       }}
                                    />
                                   
-                                </div>
+                                
                               </div>
             
-                              <div class="d-flex flex-row align-items-center mb-4">
-                                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
+                              <div className='form-group'>
+                                
+                                
                                 <label class="form-label" for="form3Example4c">Password</label>
                                 <input required type='password' className='form-control' id='password' 
                                       placeholder='Enter password' value={password}
@@ -78,9 +78,9 @@ function Login() {
                                       }}
                                    />
                                  
-                                </div>
+                                
                               </div>
-            
+                           <br></br>
                                 {/* <!-- 2 column grid layout for inline styling --> */}
                                 <div class="row mb-4">
                                     <div class="col d-flex justify-content-center">
@@ -93,7 +93,8 @@ function Login() {
             
                                     <div class="col">
                                     {/* <!-- Simple link --> */}
-                                    <a href="#!">Forgot password?</a>
+                                    <p><Link to= "/forgot">Forgot password?</Link> </p>
+                                    
                                     </div>
                                 </div>
             
