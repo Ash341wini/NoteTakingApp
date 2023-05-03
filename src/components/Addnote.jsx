@@ -87,8 +87,8 @@ export const Addnote = ({show,handleClose,edit,data}) => {
 
         </Modal.Body>
         <Modal.Footer>
-            <button variant="secondary" onClick={handleClose}> Close</button>
-          <button variant="primary" onClick={handleSubmit}>
+            <button variant="secondary" className="btn btn-secondary" onClick={handleClose}> Close</button>
+          <button variant="primary" className="btn btn-primary"  onClick={handleSubmit}>
             Save Changes
           </button>
         </Modal.Footer>
