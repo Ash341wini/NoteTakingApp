@@ -32,25 +32,26 @@ export const Navbar = () => {
         
        
          
-        <li className="nav-item ml-auto   rounded-pill d-flex align-items-center px-3" onClick={handleShow}>
+        <li className="line ml-auto   rounded-pill d-flex align-items-center px-3" onClick={handleShow}>
           
-            <span className="d-none d-md-block font-14 " >Add Notes</span>
+            <span className="d-none d-md-block font-14 line " >Add Notes</span>
         </li> 
           
-        <li className="nav-item  d-flex align-items-center px-3">
+        <li className=" line d-flex align-items-center px-3">
           
-            <span className=" d-md-block ">Important Notes</span>
+            <span className=" d-md-block  ">Important Notes</span>
           
         </li>
         
-          <li className="nav-item mr-auto  rounded-pill d-flex align-items-center px-3"  onClick={handleShow2}>
+          <li className="line mr-auto  rounded-pill d-flex align-items-center px-3"  onClick={handleShow2}>
             
               <Link to={'/'} style={{textDecoration:'none', color:'black', marginLeft:'500px'}}><span className="d-none d-md-block font-14 btn btn-outline-dark"  >Logout</span></Link>
     
           </li>
             
   </ul>
-      
+      {show && <Addnote handleClose={handleClose} show={show} data={data} edit={false} />}
+      {show2 && <Login handleClose2={handleClose2} show2={show2} />}
 </div>
       
 
