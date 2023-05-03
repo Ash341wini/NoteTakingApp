@@ -26,17 +26,13 @@ function Body() {
 
         <div>
 
+        <div className="calendar" style={{ display: 'flex', float:'right' }}>
 
-
-
-
-            <div className="calendar" style={{ display: 'flex' }}>
-
-                <input style={{ marginLeft: '40px' }} type="date" value={selectedDate} onChange={handleDateChange} />
+                <input  type="date" value={selectedDate} onChange={handleDateChange} />
 
                 <SearchFilter />
 
-            </div>
+        </div>
 
 
 
