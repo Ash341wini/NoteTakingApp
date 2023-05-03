@@ -52,6 +52,8 @@ export const Navbar = () => {
   </ul>
       {show && <Addnote handleClose={handleClose} show={show} data={data} edit={false} />}
       {show2 && <Login handleClose2={handleClose2} show2={show2} />}
+      <hr></hr>
+      <br></br>
 </div>
       
 

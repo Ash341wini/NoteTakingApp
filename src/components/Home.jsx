@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Navbar } from './Navbar';
 import { Card } from './Card';
+import Body from './Body';
 
 function Home() {
   const [data,setData]= useState(null);
@@ -24,6 +25,7 @@ function Home() {
     
       <div className="page-content container note-has-grid">
         <Navbar />
+        <Body/>
 
         
 
